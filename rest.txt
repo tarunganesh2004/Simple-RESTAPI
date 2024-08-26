@@ -1,0 +1,20 @@
+REST means representational state transfer and is an architectural style for designing networked applications.
+REST is a lightweight alternative to mechanisms like RPC (Remote Procedure Calls) and Web Services (SOAP) etc.
+RESTful applications use HTTP requests to perform CRUD (Create, Read, Update, Delete) operations.
+
+--> restful always means an HTTP-based API that is built around the principles of REST. It is a web service that follows the REST architecture.
+In other words, the caller (or client):
+
+Makes an HTTP request to a URL…
+Using one of the standard HTTP methods (GET, PUT, POST, PATCH, DELETE, etc.)…
+With some content (usually JSON) in the body…
+And waits for a response, which:
+Indicates status via an HTTP response code
+And usually has more JSON in the body.
+
+--> RESTful APIs are stateless, meaning that calls can be made independently of one another, and each call contains all of the data necessary to complete itself successfully.
+
+--> curl is a command-line tool that allows you to send HTTP requests from the command line. 
+It is a very useful tool for debugging RESTful web services.
+Ex: curl -i http://localhost:3000/api/todos
+if the status code is 200, then the http request was successful. If the status code is 404, then the resource was not found.

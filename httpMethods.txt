@@ -1,0 +1,16 @@
+RESTful APIs use standard HTTP methods to perform actions on resources. The four most commonly used methods are:
+GET: Retrieve data from the server (e.g., fetching user information).
+POST: Send data to the server to create a new resource (e.g., creating a new user).
+PUT: Update an existing resource on the server (e.g., updating user details).
+DELETE: Remove a resource from the server (e.g., deleting a user).
+PATCH: Update a resource partially (e.g., updating only the user's email address).
+
+
+HTTP Status Codes:
+200 OK: The request was successful.
+201 Created: The request was successful and a new resource was created.
+204 No Content: The request was successful, but there is no content to send back.
+400 Bad Request: The server could not understand the request due to invalid syntax.
+401 Unauthorized: Authentication is required to access the resource.
+404 Not Found: The requested resource could not be found.
+500 Internal Server Error: The server encountered an unexpected condition.

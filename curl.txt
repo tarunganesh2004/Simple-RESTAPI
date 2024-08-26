@@ -1,0 +1,25 @@
+curl is a command line tool that allows you to send HTTP requests from the command line. 
+It is a very useful tool for debugging RESTful web services.
+
+1) Fetch a web page:
+curl http://www.google.com
+
+2)download a file:
+curl -o http://example.com/file.zip
+(the -o flag tells 'curl' to save the file with the same name as on the server)
+
+3)Send a POST request:
+curl -X POST -d "param1=value1&param2=value2" http://example.com/submit
+(-X flag specifies the HTTP method, -d flag specifies the data to send)
+
+4) Send a PUT request:
+curl -X PUT -d "param1=value1&param2=value2" http://example.com/submit
+
+5) Include custom headers:
+curl -H "Authorization: Bearer my-token" http://example.com/api/data
+(-H flag allows you to include custom headers in the request)
+
+6) Verbose output:
+curl -v http://www.google.com
+(-v flag enables verbose output, which shows the request and response headers)
+(verbose refers to a mode or option that provides detailed information about what the tool is doing)
